@@ -11,6 +11,7 @@ export class AppComponent {
   usuario: string;
 
   buscarUsuario(usuario: string) {
-    this.usuario = 'https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_dendrogram_full.json';
+    // this.usuario = 'https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_dendrogram_full.json';
+    this.usuario = './assets/documents/ejemplo.json';
   }
 }

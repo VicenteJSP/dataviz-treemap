@@ -1,0 +1,95 @@
+{
+  "children": [
+    {
+      "name": "infoPersonal",
+      "children": [
+        {
+          "name": "followers",
+          "group": "A",
+          "value": 28,
+          "colname": "Segidores"
+        },
+        {
+          "name": "freands",
+          "group": "A",
+          "value": 19,
+          "colname": "Amigos"
+        }
+    ],
+      "colname": "Personal"
+    },
+    {
+      "name": "infoTweets",
+      "children": [
+        {
+          "name": "rt",
+          "group": "B",
+          "value": 5,
+          "colname": "ReTweets"
+        },
+        {
+          "name": "original",
+          "group": "B",
+          "value": 6,
+          "colname": "Originales"
+        },
+        {
+          "name": "respuestas",
+          "group": "B",
+          "value": 9,
+          "colname": "Respuestas"
+        },
+        {
+          "name": "citas",
+          "group": "C",
+          "value": 2,
+          "colname": "Citas"
+        },
+        {
+          "name": "likes",
+          "group": "C",
+          "value": 9,
+          "colname": "Me gusta"
+        },
+        {
+          "name": "menciones",
+          "group": "D",
+          "value": 12,
+          "colname": "Menciones"
+        },
+        {
+          "name": "influencia",
+          "group": "D",
+          "value": 4,
+          "colname": "Influencia"
+        },
+        {
+          "name": "hastags",
+          "group": "D",
+          "value": 2,
+          "colname": "Hastags"
+        }
+      ],
+      "colname": "Tweets"
+    },
+    {
+      "name": "idiomaPlataforma",
+      "children": [
+        {
+          "name": "idiomas",
+          "group": "E",
+          "value": 4,
+          "colname": "Idiomas"
+        },
+        {
+          "name": "plataformas",
+          "group": "E",
+          "value": 4,
+          "colname": "Plataformas"
+        }
+      ],
+      "colname": "Idioma Plataformas"
+    }
+  ],
+  "name": "Twitter"
+}
