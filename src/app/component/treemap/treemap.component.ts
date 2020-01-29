@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, Input, OnChanges, SimpleChange } from '@angular/core';
+import { Component, ViewChild, ElementRef, Input, OnChanges } from '@angular/core';
 import * as d3 from 'd3';
 
 @Component({
@@ -49,11 +49,11 @@ export class TreemapComponent implements OnChanges {
 
         d3.treemap().size([this.width, this.height]).padding(2)(root);
 
-        let color = d3.scaleOrdinal()
+        const color = d3.scaleOrdinal()
           .domain(['infoPersonal', 'infoTweets', 'idiomaPlataforma'])
-          .range(['#402D54', '#D18975', '#8FD175']);
+          .range(['#0D0D0D', '#05F2DB', '#1DB6F2', '#0583F2', '#0511F2']);
 
-        svg.selectAll('rect')
+        (svg.selectAll('rect') as any)
           .data(root.leaves())
           .enter().append('rect')
           .attr('x', (d: any) => d.x0)
@@ -61,7 +61,7 @@ export class TreemapComponent implements OnChanges {
           .attr('width', (d: any) => d.x1 - d.x0)
           .attr('height', (d: any) => d.y1 - d.y0)
           .style('stroke', 'black')
-          .style('fill', function (d) { return color(d.parent.data.name )} );
+          .style('fill', (f: any) => color(f.parent.data.name));
         console.log();
         svg.selectAll('text')
           .data(root.leaves())

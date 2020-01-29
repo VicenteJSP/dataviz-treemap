@@ -1,95 +1,70 @@
 {
+  "name": "usuario",
+  "colname": "Usuario de Twitter",
   "children": [
     {
-      "name": "infoPersonal",
+      "colname": "Informacion Personal",
+      "name": "personal",
       "children": [
         {
-          "name": "followers",
-          "group": "A",
-          "value": 28,
-          "colname": "Segidores"
+          "colname": "Comunidad",
+          "name": "comunidad",
+          "children": [
+            { "colname": "Comunidad", "name": "comunidad", "value": 75 },
+            { "colname": "Interaccion", "name": "interaccion", "value": 75 }
+          ]
         },
         {
-          "name": "freands",
-          "group": "A",
-          "value": 19,
-          "colname": "Amigos"
+          "colname": "Interaccion",
+          "name": "interaccion",
+          "children": [
+            { "colname": "Comunidad", "name": "comunidad", "value": 75 },
+            { "colname": "Interaccion", "name": "interaccion", "value": 75 }
+          ]
         }
-    ],
-      "colname": "Personal"
+      ]
     },
     {
-      "name": "infoTweets",
+      "colname": "Informacion Tweewts",
+      "name": "tweets",
       "children": [
         {
+          "colname": "Retweet",
           "name": "rt",
-          "group": "B",
-          "value": 5,
-          "colname": "ReTweets"
+          "children": [
+            { "colname": "@", "name": "mencion", "value": 59.5 },
+            { "colname": "#", "name": "hastag", "value": 59.5 },
+            { "colname": "@#", "name": "ambos", "value": 59.5 },
+            { "colname": "Sin @#", "name": "sin", "value": 59.5 }
+          ]
         },
         {
-          "name": "original",
-          "group": "B",
-          "value": 6,
-          "colname": "Originales"
-        },
-        {
-          "name": "respuestas",
-          "group": "B",
-          "value": 9,
-          "colname": "Respuestas"
-        },
-        {
-          "name": "citas",
-          "group": "C",
-          "value": 2,
-          "colname": "Citas"
-        },
-        {
-          "name": "likes",
-          "group": "C",
-          "value": 9,
-          "colname": "Me gusta"
-        },
-        {
-          "name": "menciones",
-          "group": "D",
-          "value": 12,
-          "colname": "Menciones"
-        },
-        {
-          "name": "influencia",
-          "group": "D",
-          "value": 4,
-          "colname": "Influencia"
-        },
-        {
-          "name": "hastags",
-          "group": "D",
-          "value": 2,
-          "colname": "Hastags"
+          "colname": "Cuenta",
+          "name": "cuenta",
+          "children": [
+            {
+              "colname": "Original",
+              "name": "original",
+              "children": [
+                { "colname": "@", "name": "mencion", "value": 57.75 },
+                { "colname": "#", "name": "hastag", "value": 57.75 },
+                { "colname": "@#", "name": "ambos", "value": 57.75 },
+                { "colname": "Sin @#", "name": "sin", "value": 57.75 }
+              ]
+            },
+            {
+              "colname": "Respuesta",
+              "name": "respuesta",
+              "children": [
+                { "colname": "@", "name": "mencion", "value": 57.75 },
+                { "colname": "#", "name": "hastag", "value": 57.75 },
+                { "colname": "@#", "name": "ambos", "value": 57.75 },
+                { "colname": "Sin @#", "name": "sin", "value": 57.75 }
+              ]
+            }
+          ]
         }
-      ],
-      "colname": "Tweets"
-    },
-    {
-      "name": "idiomaPlataforma",
-      "children": [
-        {
-          "name": "idiomas",
-          "group": "E",
-          "value": 4,
-          "colname": "Idiomas"
-        },
-        {
-          "name": "plataformas",
-          "group": "E",
-          "value": 4,
-          "colname": "Plataformas"
-        }
-      ],
-      "colname": "Idioma Plataformas"
+      ]
     }
-  ],
-  "name": "Twitter"
+  ]
 }
